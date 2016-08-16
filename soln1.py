@@ -1,13 +1,12 @@
 
 # coding: utf-8
 
-# In[33]:
+# In[6]:
 
 from height import h
 
-if __name__ == "__main__":
-    # execute only if run as a script
-
+def main():
+    
     #Exercise 1.1: Altitude of a satellite
     print "Exercise 1.1"
 
@@ -30,24 +29,19 @@ if __name__ == "__main__":
     z = 2700
     print "Part C.3: The altitude of the satellite that orbits the Earth once a day is ", h(z), "meters."
 
-
+    print "Part D:"
     #partD
     T1 = 23.93*60*60 #23.93 hrs in seconds
     print "The altitude of the satellite that orbits the Earth once every for 23.93 hrs is ", h(T1), "meters."
 
 
     T2 = 24*60*60 #24 hrs in seconds
-    print "Part D:"
+    
     print "The altitude of the satellite that orbits the Earth once every 24 hours is", h(T2), "meters."
+    print "These two quantities differ by:", h(T2)-h(T1), "meters."
 
 
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
+if __name__ == "__main__":
+    # execute only if run as a script
+    main()
 
