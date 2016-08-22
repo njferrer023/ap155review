@@ -1,12 +1,13 @@
 
 # coding: utf-8
 
-# In[6]:
+# In[1]:
 
 from height import h
 
-def main():
-    
+if __name__ == "__main__":
+    # execute only if run as a script
+
     #Exercise 1.1: Altitude of a satellite
     print "Exercise 1.1"
 
@@ -15,7 +16,8 @@ def main():
     #partB
 
     print "Part B:"
-    T = float(input("Enter a desired value of T in seconds: "))
+    print "Desired value of time T in seconds: "
+    T = 8
     print "The altitude above the Earth's surface of the satellite is ", h(T) , "meters"
 
     #partC
@@ -29,19 +31,24 @@ def main():
     z = 2700
     print "Part C.3: The altitude of the satellite that orbits the Earth once a day is ", h(z), "meters."
 
-    print "Part D:"
+
     #partD
     T1 = 23.93*60*60 #23.93 hrs in seconds
     print "The altitude of the satellite that orbits the Earth once every for 23.93 hrs is ", h(T1), "meters."
 
 
     T2 = 24*60*60 #24 hrs in seconds
-    
+    print "Part D:"
     print "The altitude of the satellite that orbits the Earth once every 24 hours is", h(T2), "meters."
-    print "These two quantities differ by:", h(T2)-h(T1), "meters."
 
 
-if __name__ == "__main__":
-    # execute only if run as a script
-    main()
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
 
