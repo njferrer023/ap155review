@@ -1,13 +1,17 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
-from randnumber import randnum
 from __future__ import division
+from randnumber import randnum
 from numpy import random
 
-def main():
+
+
+if __name__ == "__main__":
+    # execute only if run as a script
+
     print "Exercise 8.1"
 
     #partA
@@ -29,11 +33,6 @@ def main():
             count +=1
     fraction = count/1e6
     print fraction
-
-
-if __name__ == "__main__":
-    # execute only if run as a script
-    main()
 
 
 # In[ ]:
