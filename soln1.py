@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 from height import h
 
@@ -18,6 +18,7 @@ if __name__ == "__main__":
     print "Part B:"
     print "Desired value of time T in seconds: "
     T = 8
+    print T
     print "The altitude above the Earth's surface of the satellite is ", h(T) , "meters"
 
     #partC
